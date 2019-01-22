@@ -1,0 +1,100 @@
+body{
+  background-color: #1F2833;
+}
+
+.register_window{
+  background-color: #0B0c10;
+  box-shadow: 0 4px #202020;
+	width: 500px;
+	height: 450px;
+	margin: 100px auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.register_continut{
+  padding-top: 5px;
+}
+
+.register_image{
+  margin-left: 225px;
+  margin-top: -40px;
+  margin-bottom: -20px;
+}
+
+.register_continut h1{
+  margin-top: 35px;
+  margin-bottom: 7px;
+  color: #4470A7;
+  font-size: 40px;
+  text-align: center;
+}
+
+.register_error{
+  text-align: center;
+  font-weight: bold;
+  color: #D35400;
+  font-size: 17px;
+  padding-top: -5px;
+  padding-bottom: 5px;
+}
+
+.register_input label{
+  padding-left: 60px;
+  color:#4470A7;
+  font-weight: bold;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 30px;
+  width: 90px;
+  margin-top:10px;
+  vertical-align: middle;
+  text-align: right;
+  float: left;
+}
+
+.register_input input{
+  background-color: #383838;
+	color: #909090;
+  padding: 5px;
+  resize: none;
+  border: none;
+	border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.register_button button{
+  text-align: center;
+  background-color: #1C696D;
+  color: 	#B8BCB8;
+  height: 40px;
+  width: 235px;
+  border: none;
+  border-radius: 20px;
+	cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-left: 175px;
+}
+
+.back_to_login a{
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+  margin-left: 3%;
+}
+
+.back_to_login p{
+  text-align: center;
+  color: #4470A7;
+  font-weight: 400;
+}

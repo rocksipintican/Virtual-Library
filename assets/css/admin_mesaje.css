@@ -1,0 +1,64 @@
+.mesaje_window table{
+	margin-top: 30px;
+	width: 100%;
+  border-collapse: collapse;
+}
+
+.mesaje_window tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+.mesaje_window th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.mesaje_window td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+
+@media only screen and (max-width: 720px)
+{
+	.mesaje_window table, thead, tbody,  th, td, tr{
+		display: block;
+	}
+	.mesaje_window thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.mesaje_window tr{
+		border: 1px solid #ccc;
+	}
+
+	.mesaje_window td {
+		/* Behave  like a "row" */
+		border: none;
+
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	.mesaje_window td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		bottom: 5px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	/*
+	Label the data
+	*/
+	.mesaje_window td:nth-of-type(1):before { content: "Nume"; }
+	.mesaje_window td:nth-of-type(2):before { content: "Username"; }
+	.mesaje_window td:nth-of-type(3):before { content: "Mesaj"; }
+}

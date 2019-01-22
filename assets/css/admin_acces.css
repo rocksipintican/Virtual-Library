@@ -1,0 +1,185 @@
+.form_user{
+  /*background-color: red;*/
+  width: 50%;
+  display:inline-block;
+}
+
+.afisare_user{
+  /*background-color: blue;*/
+  width: 50%;
+  float:right;
+}
+
+.accese_window{
+  background-color: #8383DD;
+  box-shadow: 0 4px #DA7B93;
+	width: 470px;
+	height: 300px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.accese_continut{
+  padding-top: 70px;
+  display: table;
+  position: relative;
+  border-collapse: separate;
+}
+
+.accese_error{
+  text-align: center;
+  margin-left: 80px;
+  margin-top: -10px;
+  font-weight: bold;
+  color: #781C1C;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.accese_image{
+  margin-top: -100px;
+  margin-left: 205px;
+  margin-bottom: 30px;
+}
+
+.accese_input label{
+  padding-left: 70px;
+  color: #1D1A6B;
+  font-size: 20px;
+  float: left;
+  margin-right: 30px;
+  vertical-align: middle;
+  text-align: right;
+  width: 90px;
+  margin-top: 10px;
+}
+
+.accese_input input{
+  background-color: #CEF7D5;
+  color: #1D1A6B;
+  padding: 5px;
+  height: 4vh;
+  resize: none;
+  border: none;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.accese_button button{
+  text-align: center;
+  background-color: #36502B;
+  color: #AF99FF;
+  height: 4vh;
+  width: 180px;
+  border:none;
+  margin-left: 190px;
+  cursor:pointer;
+  border-radius: 10px;
+}
+
+.afisare_user table{
+	margin-top: 30px;
+	width: 100%;
+  border-collapse: collapse;
+}
+
+.afisare_user tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+.afisare_user th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+.afisare_user td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+@media screen and (max-width: 970px){
+  .form_user{
+    float: left;
+    margin-left: 150px;
+  }
+
+  .afisare_user{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 710px){
+  .form_user{
+    float: left;
+    margin-left: 90px;
+  }
+
+  .afisare_user{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-left: 110px;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 720px)
+{
+	.afisare_user table, thead, tbody,  th, td, tr{
+		display: block;
+	}
+	.afisare_user thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.afisare_user tr{
+		border: 1px solid #ccc;
+	}
+
+	.afisare_user td {
+		/* Behave  like a "row" */
+		border: none;
+
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	.afisare_user td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		bottom: 5px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	/*
+	Label the data
+	*/
+	.afisare_user td:nth-of-type(1):before { content: "Nume"; }
+	.afisare_user td:nth-of-type(2):before { content: "Utilizator"; }
+	.afisare_user td:nth-of-type(3):before { content: "Email"; }
+	.afisare_user td:nth-of-type(4):before { content: "Grad"; }
+}
+
+@media screen and (max-width: 600px){
+  .form_user{
+    float: left;
+    margin-left: 20px;
+  }
+}
